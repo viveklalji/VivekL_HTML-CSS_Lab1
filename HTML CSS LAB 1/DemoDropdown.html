@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <title>lab session 1</title>
+    <style>
+        header {
+
+            padding: 5px;
+            height: 100px;
+            text-align: center;
+            font-size: x-large;
+            background-color: rgb(94, 52, 52);
+        }
+
+        nav {
+            background-color: gray;
+            display: block;
+            height: 50px;
+            padding: 5px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-left: 10px;
+            position: relative;
+        }
+
+        a {
+            background-color: #4f4c4c;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+
+        }
+
+        li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+
+        .dropdown-menu li {
+            margin: 0;
+        }
+
+
+        .dropdown-menu a {
+            padding: 5px 10px;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Demo of Dropdown</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">link 1</a></li>
+            <li class="dropdown">
+                <a href="#">link 2</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">DD_link_1</a></li>
+                    <li><a href="#">DD_link_2</a></li>
+                    <li><a href="#">DD_link_3</a></li>
+
+                </ul>
+
+            </li>
+            <li class="dropdown">
+                <a href="#">link 3</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">DD_link_1</a></li>
+                    <li><a href="#">DD_link_2</a></li>
+                    <li><a href="#">DD_link_3</a></li>
+
+                </ul>
+
+            </li>
+        </ul>
+
+    </nav>
+
+
+</body>
+
+</html>
